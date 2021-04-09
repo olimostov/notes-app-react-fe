@@ -23,6 +23,7 @@ const Auth = props => {
       );
       props.history.push('/dashboard');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userData]);
 
   const actions = {

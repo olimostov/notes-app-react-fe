@@ -32,23 +32,18 @@ const reducer = (state, action) => {
     case 'auth':
       newState = { ...state, ...action.payload };
       return newState;
-      break;
     case 'logout':
       newState = { ...state, token: null, username: null, email: null };
       window.localStorage.removeItem('auth');
       return newState;
-      break;
     case 'getNotes':
       newState = { ...state, notes: action.payload };
       return newState;
-      break;
     case 'select':
       newState = { ...state, edit: action.payload };
       return newState;
-      break;
     default:
       return state;
-      break;
   }
 };
 
