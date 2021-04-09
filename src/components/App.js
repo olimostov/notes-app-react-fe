@@ -25,7 +25,7 @@ export const App = props => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/auth/:form' component={Auth} />
-        <Route path='/dashboard' component={Dashboard} />
+        <Route exact path='/dashboard' component={Dashboard} />
       </Switch>
     </>
   );
