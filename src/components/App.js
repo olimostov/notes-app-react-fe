@@ -7,7 +7,7 @@ import Home from '../pages/Home';
 import Nav from './Nav';
 
 export const App = props => {
-  const { state, dispatch } = useAppState();
+  const { dispatch } = useAppState();
   useState(() => {
     const auth = JSON.parse(window.localStorage.getItem('auth'));
 

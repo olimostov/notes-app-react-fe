@@ -73,5 +73,5 @@ export const AppState = props => {
 // useAppState hook
 // ----------------------
 export const useAppState = () => {
-  return React.useContext(AppContext);
+  return useContext(AppContext);
 };

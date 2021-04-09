@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAppState } from '../AppState';
 
 const Form = props => {
-  const { state, dispatch } = useAppState();
+  const { state } = useAppState();
   const { token } = state;
   const action = props.match.params.action;
   const [formData, setFormData] = useState(state[action]);
